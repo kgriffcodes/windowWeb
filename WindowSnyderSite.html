@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Window Snyder Tribute Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="" href="script.js">
+  </head>
+  <body>
+    <header>
+      <nav role="navigation">
+        <div id="menuToggle">
+
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#wiseWords"><li>Wise Words</li></a>
+            <a href="#photoGallery"><li>Photo Gallery</li></a>
+            <a href="#timeline"><li>Timeline</li></a>
+            <a href="#footerSocials"><li>Social Media</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+        <section id="home" class="firstSection">
+          <img id="windowHeadshot" src="images/windowHeadshot.jpg" alt="Headshot of Window Snyder"/>
+          <h1>WINDOW SNYDER</h1>
+        </section>
+
+        <main>
+          <section class="mainL">
+          <section id="about" class="mainSection">
+            <h2>About</h2>
+            <p>Window Snyder is a cyber security expert currently working as the Chief Security Officer at Square, Inc. Born to an African-American father and Kenyan-born mother, Snyder’s interest in tech brought her from her hometown of Laie, Hawaii to Boston College where she studied computer science. After graduating in the late 1990s, Snyder has proven to be a pioneer in the field of cyber security as she continues to hold high-level positions at leading tech companies, including Mozilla, Apple, and Microsoft. Snyder is also the co-author of Threat Modeling, a manual for security architecture analysis in software.</p>
+          </section>
+
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="http://www.dec.net/ws/uploaded_images/image1-782118.jpg" style="width:100%">
+              <div class="text">Baby Window with her family</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://i.ytimg.com/vi/e2hJnOyvPgo/maxresdefault.jpg" style="width:100%">
+              <div class="text">Pregant Window speaking at the RSCA Conference</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://pbs.twimg.com/media/DbL9xKgU8AEEMba.jpg" style="width:100%">
+              <div class="text">Window speaking at the 2018 RSCA with her son</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+        </section>
+        <section class="mainR">
+          <section id="wiseWords" class="mainSection">
+            <h2>Wise words from Window</h2>
+            <p>“First of all, do you love it? Are you sure? Because if you don’t, [it can be] hard and discouraging. [But] it’s not hard to keep doing things you love. Ask yourself, do I love this? If you don’t, you should probably think of something else to do.”</p>
+          </section>
+
+          <section id="timeline" class="mainSection">
+              <h2 id="timeline-header">Timeline of Accomplishments</h2>
+                  <p>Window Snyder (born 1975) is an American computer security expert currently working as the Chief Security Officer at Square, Inc. She was one of the first computer scientists to specialize in computer security.</p>
+              <ul id="timeline-list">
+                <li>1975: Born in Laie, Hawaii</li>
+                <li>1980: Wrote her first program at 5 years old</li>
+                <li>1993: Graduated college with a computer science degree</li>
+                <li>2002-2005: Snyder was the senior security strategist at Microsoft.</li>
+                <li>2004: Wrote her first book <em>Threat Modeling</em></li>
+                <li>2006-2008: Started work at Mozilla</li>
+                <li>2010-2015: Worked in Privacy and Security at Apple</li>
+                <li>2018-2019: Chief Security Officer and VP and GM (essentially she's running everything) at Intel</li>
+                <li>2019-present: CSO at Square</li>
+              </ul>
+            </section>
+        </section>
+      </main>
+        <footer>
+          <section class="footerL">
+            <section id="footerSocials">
+            <h3>Follow Willow on Social Media</h3>
+              <a href="https://twitter.com/window">
+              <img class="footerSocials" alt="Qries" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png">
+              </a>
+              <a href="https://www.linkedin.com/in/window/">
+              <img class="footerSocials" alt="Linkein" src="https://www.flaticon.com/svg/static/icons/svg/1384/1384014.svg">
+              </a>  
+          </section>
+          </section>
+
+          <section class="footerR">
+            <div id="gCode">G|Code</div>
+            <section id="ourNames">
+              <span>Tribute Page by:</span> 
+              <span>Magdelena A</span> 
+              <span>Kayla G</span> 
+              <span>Tae W</span>
+            </section>  
+          </section>
+        </footer>
+  
+  <script src="script.js">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+        </script>
+    </body>
+</html>
