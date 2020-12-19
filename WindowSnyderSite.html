@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5a2c99ed8.js" crossorigin="anonymous"></script>
+    <link rel=“preconnect” href=“https://fonts.gstatic.com”>
+    <link href=“https://fonts.googleapis.com/css2?family=VT323&display=swap” rel=“stylesheet”>
     <link rel="" href="script.js">
   </head>
   <body>
@@ -25,6 +28,8 @@
             <a href="#photoGallery"><li>Photo Gallery</li></a>
             <a href="#timeline"><li>Timeline</li></a>
             <a href="#footerSocials"><li>Social Media</li></a>
+            <button id="lockButton" class="btn" type="button"><i class="fas fa-lock"></i></button>
+            <button id="unlockButton" class="btn" type="button"><i class="fas fa-lock-open"></i></button>
           </ul>
         </div>
       </nav>
@@ -32,7 +37,7 @@
 
         <section id="home" class="firstSection">
           <img id="windowHeadshot" src="images/windowHeadshot.jpg" alt="Headshot of Window Snyder"/>
-          <h1>WINDOW SNYDER</h1>
+          <h1 class="name">WINDOW SNYDER</h1>
         </section>
 
         <main>
@@ -77,8 +82,8 @@
         </section>
         <section class="mainR">
           <section id="wiseWords" class="mainSection">
-            <h2>Wise words from Window</h2>
             <p>“First of all, do you love it? Are you sure? Because if you don’t, [it can be] hard and discouraging. [But] it’s not hard to keep doing things you love. Ask yourself, do I love this? If you don’t, you should probably think of something else to do.”</p>
+            <p id="whoSaidDat">-Window Snyder</p>
           </section>
 
           <section id="timeline" class="mainSection">

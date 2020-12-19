@@ -1,6 +1,5 @@
 html{
   font-size: 10px;
-
 }
 
 body {
@@ -25,9 +24,7 @@ body {
   position: relative;
   top: 50px;
   left: 50px;
-  
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
 }
@@ -36,7 +33,6 @@ body {
 {
   text-decoration: none;
   color: #232323;
-  
   transition: color 0.3s ease;
 }
 
@@ -53,13 +49,10 @@ body {
   height: 32px;
   position: absolute;
   top: -7px;
-  left: -5px;
-  
+  left: -5px; 
   cursor: pointer;
-  
   opacity: 0; 
   z-index: 2; 
-  
   -webkit-touch-callout: none;
 }
 
@@ -141,10 +134,23 @@ body {
   transform: none;
 }
 
+#unlockButton{
+  visibility: hidden;
+}
+
+#lockButton{
+  visibility: visible;
+}
+
+.btn{
+  border: none
+}
+
 h1 {
     text-align: center;
     display: flex;
     font-size: 7rem;
+    font-weight: normal;
     justify-content: flex-start;
     margin-top: 3rem;
 }
@@ -158,13 +164,15 @@ main {
   flex-direction: row;
   height: 100vh;
   justify-content: space-around;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  /* font-weight: bold; */
+  line-height: 1.3;
 }
 
 .mainSection{
   border: 1px solid #707070;
   box-sizing: border-box;
+  padding: 20px;
 }
 
 .mainL, .mainR {
@@ -285,6 +293,10 @@ img {vertical-align: middle;}
   font-style: italic;
 }
 
+#whoSaidDat {
+  text-align: right;
+  font-style: italic;
+}
 
 #timeline-list {
   display: flex;
@@ -311,6 +323,7 @@ a {
 footer {
   text-align: center;
   border-top: 1px solid grey;
+  padding: 10px;
 }
 
 .footerL{
